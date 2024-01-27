@@ -11,14 +11,14 @@ def make_rom() -> None:
     rom[0] = LDA
     rom[1] = 0x42
 
-    # Store contents of A resister at address 0x8000
+    # Store contents of A resister at address 0x6000
     rom[2] = STA
-    rom[2] = 0x00
-    rom[2] = 0x80
+    rom[3] = 0x00
+    rom[4] = 0x60
 
     # Program starting address
-    rom[0x7FFC] = 0x00
-    rom[0x7FFD] = 0x80
+    rom[0x7ffc] = 0x00
+    rom[0x7ffd] = 0x80
 
     with open(rom_file_path, "wb") as out_file:
         out_file.write(rom)

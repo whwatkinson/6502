@@ -19,6 +19,9 @@ void setup() {
     attachInterrupt(digitalPinToInterrupt(CLOCK), onClock, RISING);
 
     Serial.begin(57600);
+    Serial.println();
+    Serial.print("addr_bin            data_bin   addr_hex  r_w    data_hex");
+    Serial.println();
 }
 
 void onClock() {
@@ -41,7 +44,7 @@ void onClock() {
         data = (data << 1) + bit;
     }
 
-    sprintf(output, "  %04x  %c %02x", address, digitalRead(READ_WRITE) ? 'r' : 'W', data);
+    sprintf(output, "   %04x      %c      %02x", address, digitalRead(READ_WRITE) ? 'r' : 'W', data);
 
     Serial.println(output);
 }
