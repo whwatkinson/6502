@@ -17,8 +17,8 @@ def make_rom() -> None:
     rom[4] = 0x60
 
     # Program starting address
-    rom[0x7ffc] = 0x00
-    rom[0x7ffd] = 0x80
+    rom[0x7FFC] = 0x00
+    rom[0x7FFD] = 0x80
 
     with open(rom_file_path, "wb") as out_file:
         out_file.write(rom)

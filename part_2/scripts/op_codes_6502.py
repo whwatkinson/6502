@@ -1,3 +1,4 @@
-NOP = 0xea  # No operation
-LDA = 0xa9  # Load A
-STA = 0x8d  # Store A
+JMP = 0x4C  # Jump
+LDA = 0xA9  # Load A
+NOP = 0xEA  # No operation
+STA = 0x8D  # Store A
