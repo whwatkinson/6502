@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=yl8vPW5hydQ&ab_channel=BenEater
+
 
 1. Create a bin file with just ea
    - See part_2/scripts/ea_rom.py
