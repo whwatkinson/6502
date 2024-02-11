@@ -15,3 +15,9 @@ http://sun.hasenbraten.de/vasm/
 
 3. Write ror
    - See part_3/ror/ror.s
+
+
+n.b to assemble
+```
+vasm -Fbin -dotdir $FILENAME
+```
