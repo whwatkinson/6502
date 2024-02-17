@@ -1,18 +1,18 @@
-    .org $8000
+  .org $8000
 
 reset:
-    lda #$ff
-    sta $6002
+  lda #$ff
+  sta $6002
 
 loop:
-    lda #$55
-    sta $6000
+  lda #$55
+  sta $6000
 
-    lda #$aa
-    sta $6000
+  lda #$aa
+  sta $6000
 
-    jmp loop
+  jmp loop
 
-    .org $fffc
-    .word reset
-    .word $0000
+  .org $fffc
+  .word reset
+  .word $0000
