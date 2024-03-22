@@ -8,7 +8,8 @@ My initial thoughts.
 
 I noticed that a data line was not correct by one bit.
 
-Bens:    10001101     8d
-Mine:    10010101     95
+         addr_bin            data_bin   addr_hex  r_w    data_hex
+Bens     1000000000000010    10001101   8002      r      8d
+Mine     1000000000000010    10010101   8002      r      95
 
 A bit flip! See the photo in the folder for physical evidence!
