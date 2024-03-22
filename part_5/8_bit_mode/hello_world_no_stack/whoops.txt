@@ -1,0 +1,14 @@
+I was following along in the tutorial and I noticed that the output was not the same.
+
+My initial thoughts.
+
+1. As im using a windows/linux fankastein machine. That somewhere in the config for vasm it was using a different OP code?
+2. The arduino was connected incorrectly. 16 address lines and 8 data lines, maybe a bit flip?
+
+
+I noticed that a data line was not correct by one bit.
+
+Bens:    10001101     8d
+Mine:    10010101     95
+
+A bit flip! See the photo in the folder for physical evidence!
